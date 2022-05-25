@@ -1,6 +1,6 @@
 app-id: org.qxmledit.QXmlEdit
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: qxmledit
 rename-desktop-file: QXmlEdit.desktop
@@ -35,8 +35,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/lbellonda/qxmledit.git
-        tag: 0.9.16
-        commit: 5a06fbcc648500fc0e4c813ffe5d774fa332e6bc
+        tag: 0.9.17
+        commit: 83e93fa470618a7ce97b83e6c63699205bb4d000
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
