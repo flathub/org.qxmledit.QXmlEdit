@@ -21,8 +21,8 @@ modules:
       - QXMLEDIT_NO_QWTPLOT=TRUE
       - QXMLEDIT_INST_USE_C11=TRUE
       - QXMLEDIT_INST_DATA_DIR=${FLATPAK_DEST}/share/qxmledit/
-      - QXMLEDIT_INST_DESKTOP_DIR=${FLATPAK_DEST}/share/applications/
-      - QXMLEDIT_INST_APPDATA_DIR=${FLATPAK_DEST}/share/appdata/
+      - QXMLEDIT_INST_DESKTOPINFO_DIR=${FLATPAK_DEST}/share/applications/
+      - QXMLEDIT_INST_METAINFO_DIR=${FLATPAK_DEST}/share/metainfo/
       - QXMLEDIT_INST_DIR=${FLATPAK_DEST}/bin/
       - QXMLEDIT_INST_DOC_DIR=${FLATPAK_DEST}/share/doc/qxmledit
       - QXMLEDIT_INST_LIB_DIR=${FLATPAK_DEST}/lib/
@@ -35,12 +35,10 @@ modules:
     sources:
       - type: git
         url: https://github.com/lbellonda/qxmledit.git
-        tag: 0.9.17
-        commit: 83e93fa470618a7ce97b83e6c63699205bb4d000
+        tag: 0.9.18
+        commit: f773c4c0a24ff935ece69a4c1af1a16491c7569f
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
-      - type: patch
-        path: install.patch
       - type: patch
         path: appstream.patch
