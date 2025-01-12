@@ -21,10 +21,11 @@ index 455974bf..91408393 100644
          <category>Development</category>
          <category>TextEditor</category>
      ​</categories>
-@@ -28,11 +26,5 @@
+@@ -28,11 +26,6 @@
      <releases>
        <release version="0.9.18" />
      </releases>
++    <developer_name>QXmlEdit Developers</developer_name>
 -    <provides>
 -   ​    <binary>qxmledit</binary>
 -   ​  </provides>

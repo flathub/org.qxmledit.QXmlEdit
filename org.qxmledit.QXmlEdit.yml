@@ -1,6 +1,6 @@
 app-id: org.qxmledit.QXmlEdit
 runtime: org.kde.Platform
-runtime-version: 5.15-23.08
+runtime-version: 5.15-24.08
 sdk: org.kde.Sdk
 command: qxmledit
 rename-desktop-file: QXmlEdit.desktop
@@ -32,7 +32,7 @@ modules:
       - install -Dm0644 install_scripts/environment/icon/qxmledit.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/${FLATPAK_ID}.png
       - install -Dm0644 install_scripts/environment/icon/qxmledit_48x48.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/apps/${FLATPAK_ID}.png
       - install -Dm0644 src/images/icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
-      - desktop-file-edit --set-key="Icon" --set-value="${FLATPAK_ID}" "${FLATPAK_DEST}/share/applications/QXmlEdit.desktop"
+      - desktop-file-edit --set-icon="${FLATPAK_ID}" "${FLATPAK_DEST}/share/applications/QXmlEdit.desktop"
     sources:
       - type: git
         url: https://github.com/lbellonda/qxmledit.git
