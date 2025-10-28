@@ -1,6 +1,6 @@
 app-id: org.qxmledit.QXmlEdit
 runtime: org.kde.Platform
-runtime-version: 5.15-24.08
+runtime-version: 5.15-25.08
 sdk: org.kde.Sdk
 command: qxmledit
 rename-desktop-file: QXmlEdit.desktop
