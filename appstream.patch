@@ -2,7 +2,7 @@ From 843373b05ee78bb98ce622f8cf76831b879fcd9b Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
  <Mailaender@users.noreply.github.com>
 Date: Mon, 25 Apr 2022 20:01:38 +0200
-Subject: [PATCH 1/4] Remove invalid tags
+Subject: [PATCH 1/7] Remove invalid tags
 
 ---
  install_scripts/environment/desktop/QXmlEdit.appdata.xml | 8 --------
@@ -21,11 +21,10 @@ index 455974bf..91408393 100644
          <category>Development</category>
          <category>TextEditor</category>
      ​</categories>
-@@ -28,11 +26,6 @@
+@@ -28,11 +26,5 @@
      <releases>
        <release version="0.9.18" />
      </releases>
-+    <developer_name>QXmlEdit Developers</developer_name>
 -    <provides>
 -   ​    <binary>qxmledit</binary>
 -   ​  </provides>
@@ -37,9 +36,9 @@ index 455974bf..91408393 100644
 
 From 7bca67f5510870280443792f5f3ca1b8ac9a0a03 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
- <matthias.mailaender@lablicate.com>
+ <Mailaender@users.noreply.github.com>
 Date: Tue, 26 Apr 2022 20:40:23 +0200
-Subject: [PATCH 2/4] Add Open Age Ratings Service
+Subject: [PATCH 2/7] Add Open Age Ratings Service
 
 ---
  install_scripts/environment/desktop/QXmlEdit.appdata.xml | 1 +
@@ -58,9 +57,9 @@ index 91408393..b17c4c91 100644
 
 From a9b214de7f1c8ff15a5bf1f89d9face2db12dfb6 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
- <matthias.mailaender@lablicate.com>
+ <Mailaender@users.noreply.github.com>
 Date: Tue, 26 Apr 2022 20:40:56 +0200
-Subject: [PATCH 3/4] Remove incorrect screenshot width/height
+Subject: [PATCH 3/7] Remove incorrect screenshot width/height
 
 as it is 808x599
 ---
@@ -83,9 +82,9 @@ index b17c4c91..65b44edf 100644
 
 From f7172d99ed5562c1af84a9dd150fe2c7cf2f3455 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
- <matthias.mailaender@lablicate.com>
+ <Mailaender@users.noreply.github.com>
 Date: Thu, 9 Feb 2023 22:11:03 +0100
-Subject: [PATCH 4/4] Release tag requires publication date
+Subject: [PATCH 4/7] Release tag requires publication date
 
 ---
  install_scripts/environment/desktop/QXmlEdit.appdata.xml | 4 +++-
@@ -106,3 +105,74 @@ index 65b44edf..3d5d00f5 100644
      </releases>
      <project_group>Qt</project_group>
      <content_rating type="oars-1.1" />
+
+From 9b6b5e120400e400cabcde956bc1ea74d3cb5d42 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
+ <Mailaender@users.noreply.github.com>
+Date: Tue, 26 May 2026 10:19:30 +0200
+Subject: [PATCH 5/7] Add latest release.
+
+---
+ install_scripts/environment/desktop/QXmlEdit.appdata.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/install_scripts/environment/desktop/QXmlEdit.appdata.xml b/install_scripts/environment/desktop/QXmlEdit.appdata.xml
+index 3d5d00f5..57615abe 100644
+--- a/install_scripts/environment/desktop/QXmlEdit.appdata.xml
++++ b/install_scripts/environment/desktop/QXmlEdit.appdata.xml
+@@ -24,6 +24,7 @@
+     <url type="homepage">https://qxmledit.org</url>
+     <url type="bugtracker">https://github.com/lbellonda/qxmledit/issues</url>
+     <releases>
++      <release version="0.9.18.1" date="2026-05-22" />
+       <release version="0.9.18" date="2023-01-30" />
+       <release version="0.9.17" date="2022-04-02" />
+       <release version="0.9.16" date="2020-09-12" />
+
+From 9bb19bfa02e539359006c982433b19dc201aa5da Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
+ <Mailaender@users.noreply.github.com>
+Date: Tue, 26 May 2026 10:19:44 +0200
+Subject: [PATCH 6/7] Add repository browser.
+
+---
+ install_scripts/environment/desktop/QXmlEdit.appdata.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/install_scripts/environment/desktop/QXmlEdit.appdata.xml b/install_scripts/environment/desktop/QXmlEdit.appdata.xml
+index 57615abe..c80db253 100644
+--- a/install_scripts/environment/desktop/QXmlEdit.appdata.xml
++++ b/install_scripts/environment/desktop/QXmlEdit.appdata.xml
+@@ -22,6 +22,7 @@
+         <category>TextEditor</category>
+     ​</categories>
+     <url type="homepage">https://qxmledit.org</url>
++    <url type="vcs-browser">https://github.com/lbellonda/qxmledit/</url>
+     <url type="bugtracker">https://github.com/lbellonda/qxmledit/issues</url>
+     <releases>
+       <release version="0.9.18.1" date="2026-05-22" />
+
+From 3e8e066ac448b01a9d49e928555df2634c5b5f6f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
+ <Mailaender@users.noreply.github.com>
+Date: Tue, 26 May 2026 10:58:59 +0200
+Subject: [PATCH 7/7] Add developer.
+
+---
+ install_scripts/environment/desktop/QXmlEdit.appdata.xml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/install_scripts/environment/desktop/QXmlEdit.appdata.xml b/install_scripts/environment/desktop/QXmlEdit.appdata.xml
+index c80db253..0919d94d 100644
+--- a/install_scripts/environment/desktop/QXmlEdit.appdata.xml
++++ b/install_scripts/environment/desktop/QXmlEdit.appdata.xml
+@@ -6,6 +6,9 @@
+     <project_license>LGPL-2.0+</project_license>
+     <name>QXmlEdit</name>
+     <summary>XML editor</summary>
++    <developer id="org.qxmledit">
++        <name>QXmlEdit Developers</name>
++    </developer>
+     <description>
+         <p>
+             QXmlEdit is an XML editor with some facilities to explore and process big files.

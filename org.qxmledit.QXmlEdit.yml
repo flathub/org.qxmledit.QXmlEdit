@@ -36,8 +36,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/lbellonda/qxmledit.git
-        tag: 0.9.18
-        commit: f773c4c0a24ff935ece69a4c1af1a16491c7569f
+        tag: 0.9.18.1
+        commit: f15a126c154f9c661f9a950025a4168cf827f065
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
