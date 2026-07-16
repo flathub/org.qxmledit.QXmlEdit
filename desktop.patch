@@ -1,0 +1,22 @@
+From e065ba189d23a531322d8cc1a2c76e39615b86a2 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Matthias=20Mail=C3=A4nder?=
+ <Mailaender@users.noreply.github.com>
+Date: Thu, 16 Jul 2026 10:07:10 +0200
+Subject: [PATCH] Set app window class.
+
+---
+ install_scripts/environment/desktop/QXmlEdit.desktop | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/install_scripts/environment/desktop/QXmlEdit.desktop b/install_scripts/environment/desktop/QXmlEdit.desktop
+index 7adef057..6142ccf8 100644
+--- a/install_scripts/environment/desktop/QXmlEdit.desktop
++++ b/install_scripts/environment/desktop/QXmlEdit.desktop
+@@ -12,6 +12,7 @@ Comment=Edit XML files and view XSD documents.
+ Icon=qxmledit
+ Hidden=false
+ StartupNotify=true
++StartupWMClass=QXmlEdit.qxmledit
+ #Path
+ Terminal=false
+ MimeType=text/xml;
